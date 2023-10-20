@@ -1,11 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-
+import LeftNavBar from './LeftNavBar';
+import TopNavBar from './TopNavBar';
+import BillList from './BillList';
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <div className="flex">
+    <LeftNavBar />
+    <div className="flex-grow bg-gray-100">
+      <div>
+      <TopNavBar />
+      </div>
+      <div>
+      <BillList />
+      </div>
+    </div>
+  </div>
   );
 }
 
